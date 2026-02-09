@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b1mrwdvkuhbmo"]
+
+[ext_resource type="Texture2D" uid="uid://ky1c6incm2i6" path="res://pngtree-a-beauty-plant-in-white-pot-on-background-png-image_10785997.png" id="1_0dyuc"]
+
+[node name="plant3" type="Node2D" unique_id=1536017703]
+
+[node name="p3" type="Sprite2D" parent="." unique_id=567194294]
+position = Vector2(113.5, 543.5)
+scale = Vector2(0.50277776, 0.50277776)
+texture = ExtResource("1_0dyuc")

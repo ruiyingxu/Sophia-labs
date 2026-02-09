@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://crmrr55qkoxjp"]
+
+[ext_resource type="Texture2D" uid="uid://bydr233dfsl0c" path="res://pngtree-small-indoor-plant-in-terracotta-pot-for-decoration-png-image_16017453.png" id="1_0ptvs"]
+
+[node name="plant2" type="Node2D" unique_id=1039157644]
+
+[node name="p1" type="Sprite2D" parent="." unique_id=102747662]
+position = Vector2(876, 470)
+scale = Vector2(0.44583333, 0.44583333)
+texture = ExtResource("1_0ptvs")
