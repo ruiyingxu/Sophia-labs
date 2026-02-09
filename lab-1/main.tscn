@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bgh1m5tkxpokq"]
+
+[ext_resource type="Texture2D" uid="uid://dsw8piy8g37yr" path="res://old-money-style-bedroom@2x.jpg" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://b7w6awaallrj2" path="res://cat-png-17.png" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c16n7nn7c6y2r" path="res://dog-on-isolated-background-png.png" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://di8ymcpt1lhb1" path="res://plant.tscn" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://7t4siue5yndy" path="res://lush-green-plant-white-pot-on-transparent-background-png.png" id="6_5vw27"]
+[ext_resource type="PackedScene" uid="uid://crmrr55qkoxjp" path="res://plant_2.tscn" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://b1mrwdvkuhbmo" path="res://plant_3.tscn" id="7_5vw27"]
+
+[node name="main" type="Node2D" unique_id=1327891538]
+
+[node name="background" type="Sprite2D" parent="." unique_id=715012690]
+position = Vector2(599.5817, 339.5)
+scale = Vector2(0.8088942, 0.8088942)
+texture = ExtResource("1_h2yge")
+
+[node name="cat" type="Sprite2D" parent="." unique_id=1925357275]
+position = Vector2(413.00003, 382.00003)
+scale = Vector2(0.30234355, 0.30234355)
+texture = ExtResource("2_1bvp3")
+
+[node name="dog" type="Sprite2D" parent="." unique_id=1086142412]
+position = Vector2(720.00006, 560.00006)
+scale = Vector2(0.5057143, 0.5057143)
+texture = ExtResource("3_lquwl")
+
+[node name="plant" parent="." unique_id=1616000542 instance=ExtResource("4_7mycd")]
+
+[node name="2" type="Sprite2D" parent="plant" unique_id=1328772530]
+position = Vector2(1112, 390.00003)
+scale = Vector2(0.4485714, 0.4485714)
+texture = ExtResource("6_5vw27")
+
+[node name="plant2" parent="." unique_id=1039157644 instance=ExtResource("6_272bh")]
+
+[node name="plant3" parent="." unique_id=1536017703 instance=ExtResource("7_5vw27")]
