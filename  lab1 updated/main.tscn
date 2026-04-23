@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://uwwjs4wr2a2s"]
+
+[ext_resource type="Texture2D" uid="uid://cfe7wpub27t2o" path="res://forever stay in wonderland.png" id="1_7mycd"]
+[ext_resource type="Texture2D" uid="uid://q3qulw2gxas2" path="res://Cheshire cat .png" id="2_272bh"]
+[ext_resource type="Texture2D" uid="uid://cal6hlibyih8s" path="res://flowers.png" id="5_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dlbw6ghhtcnv5" path="res://tree.tscn" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://dhe41lexicl4j" path="res://caterpillar.png" id="6_kek77"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lquwl"]
+load_path = "res://.godot/imported/tree pix.png-e8038dd88ebfc1df6af2e06dedfe17e5.ctex"
+
+[node name="Main" type="Node2D" unique_id=1462474854]
+
+[node name="back" type="Sprite2D" parent="." unique_id=1461763775]
+position = Vector2(641.7709, -641.00006)
+scale = Vector2(1.0466782, 1.0664063)
+texture = ExtResource("1_7mycd")
+
+[node name="cat" type="Sprite2D" parent="." unique_id=847982229]
+position = Vector2(850, -235)
+scale = Vector2(0.12045784, 0.12045784)
+texture = ExtResource("2_272bh")
+
+[node name="TREE" type="Node2D" parent="." unique_id=1781817300]
+
+[node name="tree" type="Sprite2D" parent="TREE" unique_id=1360661900]
+position = Vector2(1717.0001, -57)
+scale = Vector2(0.9303808, 1.1508265)
+texture = SubResource("CompressedTexture2D_lquwl")
+
+[node name="tree2" parent="TREE" unique_id=2063979157 instance=ExtResource("5_272bh")]
+position = Vector2(1938, -47.00003)
+
+[node name="tree3" parent="TREE" unique_id=81228975 instance=ExtResource("5_272bh")]
+position = Vector2(5.999939, -78.000015)
+scale = Vector2(1.0671837, 1.2883536)
+
+[node name="ground" type="Node2D" parent="." unique_id=2042972440]
+position = Vector2(1635, -265)
+scale = Vector2(0.64950246, 0.64950246)
+
+[node name="g" type="Sprite2D" parent="ground" unique_id=1893135712]
+position = Vector2(-3074.6611, 315.6262)
+scale = Vector2(0.14763276, 0.14763276)
+texture = ExtResource("5_5vw27")
+
+[node name="g2" type="Sprite2D" parent="ground" unique_id=601767359]
+position = Vector2(-549.65155, 36.951378)
+scale = Vector2(0.3336025, 0.3336025)
+texture = ExtResource("6_kek77")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=587555924]
+position = Vector2(648, -619)
+zoom = Vector2(0.4, 0.4)
